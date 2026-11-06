@@ -1,0 +1,37 @@
+name: Feature request
+description: Propose an improvement or new capability
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: What developer problem or use case does this address?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe the behavior you would like to see.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+  - type: dropdown
+    id: milestone
+    attributes:
+      label: Related milestone
+      options:
+        - M0 — Project Foundation
+        - M1 — Detection and Containerization
+        - M2 — Build and Publish
+        - M3 — CLI
+        - M4 — Local Deployment and VS Code
+        - M5 — Ephemeral Cloud
+        - M6 — Security and Maturity
+    validations:
+      required: false
